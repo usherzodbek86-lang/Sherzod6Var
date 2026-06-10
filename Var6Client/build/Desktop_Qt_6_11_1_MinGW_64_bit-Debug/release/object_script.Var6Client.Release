@@ -1,0 +1,13 @@
+release/main.o
+release/mainwindow.o
+release/loginwindow.o
+release/networkmanager.o
+release/functionpanel.o
+release/resulttable.o
+release/adminpanel.o
+release/moc_mainwindow.o
+release/moc_loginwindow.o
+release/moc_networkmanager.o
+release/moc_functionpanel.o
+release/moc_resulttable.o
+release/moc_adminpanel.o
