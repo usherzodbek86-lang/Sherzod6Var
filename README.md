@@ -163,14 +163,3 @@ doxygen Doxyfile
 ![UML Server](https://raw.githubusercontent.com/usherzodbek86-lang/Sherzod6Var/docs/UML_Server.jpg)
 ![UML Client](https://raw.githubusercontent.com/usherzodbek86-lang/Sherzod6Var/docs/UML_Client.jpg)
 ![UseCase](https://raw.githubusercontent.com/usherzodbek86-lang/Sherzod6Var/docs/UseCase.jpg)
-
----
-
-## Документация
-
-- [Спецификация требований](Specification.docx)
-- [Стратегия тестирования и тест-план](TestStrategy.xlsx)
-- [Test Cases и дефекты](TestCases_Defects.xlsx)
-- [Doxygen-документация](docs/html/index.html)
-- [Wiki проекта](../../wiki) — структура Git, диаграммы классов, Use-Case
-
