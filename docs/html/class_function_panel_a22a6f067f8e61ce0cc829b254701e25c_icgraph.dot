@@ -1,0 +1,15 @@
+digraph "FunctionPanel::onEmbedAudio"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="FunctionPanel::onEmbedAudio",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="FunctionPanel::buildStegoTab",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_function_panel.html#a7067dea9591465da0ffe51665a50c3ae",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FunctionPanel::setupUi",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_function_panel.html#acc9f052b6a2a9a9acd404608a607e230",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="FunctionPanel::FunctionPanel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_function_panel.html#a2d5d7db3a79e75cfd2d941941e4ff985",tooltip=" "];
+}

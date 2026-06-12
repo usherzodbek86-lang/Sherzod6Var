@@ -1,0 +1,15 @@
+<map id="Var6Client/src/adminpanel.h" name="Var6Client/src/adminpanel.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,295,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,78,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,35,85,76,82,71,176,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="102,80,200,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,31,171,69,167,66,192,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="224,80,286,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,30,240,68,234,67,211,35"/>
+<area shape="rect" id="Node000005" href="$resulttable_8h.html" title=" " alt="" coords="310,80,402,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="230,30,318,72,313,74,229,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="244,155,348,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="348,106,317,145,315,141,343,108"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="372,155,458,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="368,105,398,143,393,142,365,110"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="NetworkManager::NetworkManager" name="NetworkManager::NetworkManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,233,61"/>
+<area shape="rect" id="Node000002" href="$class_network_manager.html#a0028518c2761defad4d923b42493463b" title=" " alt="" coords="281,8,503,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,34,268,33,263,34,233,40"/>
+<area shape="rect" id="Node000004" href="$class_network_manager.html#a8c95ebaf4720e37c5dfbe3433970c209" title=" " alt="" coords="286,60,498,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,56,273,62,268,62,233,61"/>
+<area shape="rect" id="Node000003" href="$class_network_manager.html#ac6ae166f8298c7dcd6c047af4e032417" title=" " alt="" coords="551,5,767,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="503,18,538,20,533,20,504,23"/>
+<area shape="rect" id="Node000005" href="$class_network_manager.html#aaf71ebc15b863819ebb5705bc41ad93d" title=" " alt="" coords="568,56,750,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="498,72,556,76,550,76,498,78"/>
+</map>

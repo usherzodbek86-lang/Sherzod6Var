@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/loginwindow.o
+debug/networkmanager.o
+debug/functionpanel.o
+debug/resulttable.o
+debug/adminpanel.o
+debug/moc_mainwindow.o
+debug/moc_loginwindow.o
+debug/moc_networkmanager.o
+debug/moc_functionpanel.o
+debug/moc_resulttable.o
+debug/moc_adminpanel.o

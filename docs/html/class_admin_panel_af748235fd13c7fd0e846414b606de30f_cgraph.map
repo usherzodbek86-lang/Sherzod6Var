@@ -1,0 +1,19 @@
+<map id="AdminPanel::onDeleteUser" name="AdminPanel::onDeleteUser">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,185,85"/>
+<area shape="rect" id="Node000002" href="$class_network_manager.html#a160c056e7177dbe9686310e4896326d6" title=" " alt="" coords="237,33,434,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,60,224,58,219,59,186,65"/>
+<area shape="rect" id="Node000008" href="$class_network_manager.html#a00f9107b88e93c583b4fd540b6dedf1a" title="Отправить JSON&#45;запрос." alt="" coords="233,84,438,111"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="185,79,220,85,214,85,185,84"/>
+<area shape="rect" id="Node000003" href="$class_network_manager.html#a5aaf71c4aa7a2efab7f1dbae02312280" title=" " alt="" coords="486,33,713,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,44,473,46,467,47,434,49"/>
+<area shape="rect" id="Node000004" href="$class_network_manager.html#a0028518c2761defad4d923b42493463b" title=" " alt="" coords="761,8,984,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="713,33,748,33,743,33,714,39"/>
+<area shape="rect" id="Node000006" href="$class_network_manager.html#a8c95ebaf4720e37c5dfbe3433970c209" title=" " alt="" coords="767,63,978,89"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="714,56,754,63,749,63,714,62"/>
+<area shape="rect" id="Node000005" href="$class_network_manager.html#ac6ae166f8298c7dcd6c047af4e032417" title=" " alt="" coords="1032,5,1248,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="984,18,1019,20,1014,20,984,23"/>
+<area shape="rect" id="Node000007" href="$class_network_manager.html#aaf71ebc15b863819ebb5705bc41ad93d" title=" " alt="" coords="1049,56,1230,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="979,74,1036,77,1031,77,979,79"/>
+<area shape="rect" id="Node000009" href="$class_network_manager.html#a97d1fb741f609c2442efdfd92e944ed2" title=" " alt="" coords="499,84,700,111"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="439,95,486,97,480,97,439,100"/>
+</map>
