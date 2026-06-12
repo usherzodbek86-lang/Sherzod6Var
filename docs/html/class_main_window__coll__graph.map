@@ -1,0 +1,17 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="Node000001" title="Главное окно приложения." alt="" coords="130,279,227,305"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,180,112,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,214,165,277,160,279,85,219"/>
+<area shape="rect" id="Node000003" href="$class_function_panel.html" title="Панель с четырьмя вкладками для функций варианта: RSA, SHA&#45;1, Метод Ньютона, Стеганография (WAV)." alt="" coords="252,180,356,207"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,220,289,240,276,257,253,272,228,283,227,278,251,268,273,253,285,238,294,223"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,81,213,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="188,119,201,138,215,154,235,167,258,179,253,180,232,172,211,158,197,141,187,124"/>
+<area shape="rect" id="Node000007" href="$class_admin_panel.html" title="Панель администратора: список пользователей, удаление, смена роли. Отображается только при role == &quot;a..." alt="" coords="136,180,227,207"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="180,122,183,181,178,179,177,126"/>
+<area shape="rect" id="Node000005" href="$class_result_table.html" title="Таблица для отображения результатов операций." alt="" coords="257,81,348,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="305,122,306,181,301,179,301,126"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="264,118,245,134,194,182,191,178,241,130,269,115"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="251,5,354,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="304,45,305,82,300,80,301,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="182,221,181,280,176,277,178,224"/>
+</map>

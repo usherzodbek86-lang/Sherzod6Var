@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Var6 — Система шифрования и стеганографии: Исходный файл Var6Client/src/functionpanel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Var6 — Система шифрования и стеганографии<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа. Группа 251-354. Ахроров Шерзодбек Туймурод угли</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('functionpanel_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">functionpanel.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="functionpanel_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QStackedWidget&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QLabel&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QTextEdit&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QComboBox&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="resulttable_8h.html">resulttable.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_function_panel.html">   15</a></span><span class="keyword">class </span><a class="code hl_function" href="class_function_panel.html#a2d5d7db3a79e75cfd2d941941e4ff985">FunctionPanel</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_OBJECT</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_function_panel.html#a2d5d7db3a79e75cfd2d941941e4ff985">FunctionPanel</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#abff4160d664a70c633ef4393dd08fab4">onResponse</a>(<span class="keyword">const</span> QJsonObject &amp;resp);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// RSA</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#a14c947c65c33e3603d670aaa6938df14">onRsaEncrypt</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#a13229f11c1e90edb6c7efc867cfa4dd4">onRsaDecrypt</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// SHA-1</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#a6afe059a7266a629e5a6f4bacda15488">onSha1Hash</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Newton</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#adb82fa5b98439020e7c18326ef217df3">onNewtonSolve</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// Steganography</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#a22a6f067f8e61ce0cc829b254701e25c">onEmbedAudio</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_function_panel.html#a71915838c272980f83b01743da9606c7">onExtractAudio</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// Построение вкладок</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    QWidget *<a class="code hl_function" href="class_function_panel.html#acba7dde974c62940bf72b41afb04e033">buildRsaTab</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QWidget *<a class="code hl_function" href="class_function_panel.html#a00db863aeeaf45d183bdc633882f9bb8">buildSha1Tab</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    QWidget *<a class="code hl_function" href="class_function_panel.html#a2b7fb74dd54e7a469be9a8e3f9e63fec">buildNewtonTab</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    QWidget *<a class="code hl_function" href="class_function_panel.html#a7067dea9591465da0ffe51665a50c3ae">buildStegoTab</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span>     <a class="code hl_function" href="class_function_panel.html#acc9f052b6a2a9a9acd404608a607e230">setupUi</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// ── RSA ──</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_function_panel.html#a7d5562fb8f65db2c086cf1cdfe237e4c">   46</a></span>    QTextEdit   *<a class="code hl_variable" href="class_function_panel.html#a7d5562fb8f65db2c086cf1cdfe237e4c">m_rsaInput</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_function_panel.html#a914ccddd21110532842a9b25618ead2d">   47</a></span>    QTextEdit   *<a class="code hl_variable" href="class_function_panel.html#a914ccddd21110532842a9b25618ead2d">m_rsaEncrypted</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_function_panel.html#a910a0dbcc89bc68c30c537c13eca057f">   48</a></span>    QTextEdit   *<a class="code hl_variable" href="class_function_panel.html#a910a0dbcc89bc68c30c537c13eca057f">m_rsaKeys</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_function_panel.html#a39cce2bb88cd9f0b0fa430a50cac2de5">   49</a></span>    QLabel      *<a class="code hl_variable" href="class_function_panel.html#a39cce2bb88cd9f0b0fa430a50cac2de5">m_rsaStatus</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// ── SHA-1 ──</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_function_panel.html#af27000c74b91a555523ba120d4ee3e5a">   52</a></span>    QLineEdit   *<a class="code hl_variable" href="class_function_panel.html#af27000c74b91a555523ba120d4ee3e5a">m_sha1Input</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_function_panel.html#adca4df26f17c56c94172baf8c65c99db">   53</a></span>    QLabel      *<a class="code hl_variable" href="class_function_panel.html#adca4df26f17c56c94172baf8c65c99db">m_sha1Result</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// ── Newton ──</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_function_panel.html#ae992a74d19f46d543fe84871d21161a2">   56</a></span>    QComboBox   *<a class="code hl_variable" href="class_function_panel.html#ae992a74d19f46d543fe84871d21161a2">m_newtonFunc</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_function_panel.html#a40c7f01ddce31ee186e799023de618ec">   57</a></span>    QLineEdit   *<a class="code hl_variable" href="class_function_panel.html#a40c7f01ddce31ee186e799023de618ec">m_newtonX0</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_function_panel.html#a94a8948c97048f88ee7529f3b28f6e63">   58</a></span>    <a class="code hl_class" href="class_result_table.html">ResultTable</a> *<a class="code hl_variable" href="class_function_panel.html#a94a8948c97048f88ee7529f3b28f6e63">m_newtonTable</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_function_panel.html#a26c8511841a1d8d72977d08bfa8a6ec4">   59</a></span>    QLabel      *<a class="code hl_variable" href="class_function_panel.html#a26c8511841a1d8d72977d08bfa8a6ec4">m_newtonRoot</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// ── Stego ──</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_function_panel.html#aa19aaefd1edf7145d73853b29f03b257">   62</a></span>    QLabel      *<a class="code hl_variable" href="class_function_panel.html#aa19aaefd1edf7145d73853b29f03b257">m_stegoFile</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_function_panel.html#a6644b567d428f0a29a46bc01772cc046">   63</a></span>    QLineEdit   *<a class="code hl_variable" href="class_function_panel.html#a6644b567d428f0a29a46bc01772cc046">m_stegoMessage</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_function_panel.html#a2e1ca9198c332ba331f93f7696224d41">   64</a></span>    QLabel      *<a class="code hl_variable" href="class_function_panel.html#a2e1ca9198c332ba331f93f7696224d41">m_stegoStatus</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_function_panel.html#a454c12c2881d95ce8bd5e5a8f874c08d">   65</a></span>    QString      <a class="code hl_variable" href="class_function_panel.html#a454c12c2881d95ce8bd5e5a8f874c08d">m_stegoFilePath</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_function_panel.html#a560f5fcc3598309e6543c64d85da511a">   66</a></span>    QString      <a class="code hl_variable" href="class_function_panel.html#a560f5fcc3598309e6543c64d85da511a">m_pendingAction</a>; <span class="comment">// &quot;embed&quot; | &quot;extract&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_function_panel.html#afcd667772b0756fafc496c7ba894accc">   68</a></span>    QByteArray   <a class="code hl_variable" href="class_function_panel.html#afcd667772b0756fafc496c7ba894accc">m_lastWavData</a>;  <span class="comment">// последний загруженный WAV</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+</div>
+<div class="ttc" id="aclass_function_panel_html_a00db863aeeaf45d183bdc633882f9bb8"><div class="ttname"><a href="class_function_panel.html#a00db863aeeaf45d183bdc633882f9bb8">FunctionPanel::buildSha1Tab</a></div><div class="ttdeci">QWidget * buildSha1Tab()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:91</div></div>
+<div class="ttc" id="aclass_function_panel_html_a13229f11c1e90edb6c7efc867cfa4dd4"><div class="ttname"><a href="class_function_panel.html#a13229f11c1e90edb6c7efc867cfa4dd4">FunctionPanel::onRsaDecrypt</a></div><div class="ttdeci">void onRsaDecrypt()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:215</div></div>
+<div class="ttc" id="aclass_function_panel_html_a14c947c65c33e3603d670aaa6938df14"><div class="ttname"><a href="class_function_panel.html#a14c947c65c33e3603d670aaa6938df14">FunctionPanel::onRsaEncrypt</a></div><div class="ttdeci">void onRsaEncrypt()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:204</div></div>
+<div class="ttc" id="aclass_function_panel_html_a22a6f067f8e61ce0cc829b254701e25c"><div class="ttname"><a href="class_function_panel.html#a22a6f067f8e61ce0cc829b254701e25c">FunctionPanel::onEmbedAudio</a></div><div class="ttdeci">void onEmbedAudio()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:249</div></div>
+<div class="ttc" id="aclass_function_panel_html_a26c8511841a1d8d72977d08bfa8a6ec4"><div class="ttname"><a href="class_function_panel.html#a26c8511841a1d8d72977d08bfa8a6ec4">FunctionPanel::m_newtonRoot</a></div><div class="ttdeci">QLabel * m_newtonRoot</div><div class="ttdef"><b>Определения</b> functionpanel.h:59</div></div>
+<div class="ttc" id="aclass_function_panel_html_a2b7fb74dd54e7a469be9a8e3f9e63fec"><div class="ttname"><a href="class_function_panel.html#a2b7fb74dd54e7a469be9a8e3f9e63fec">FunctionPanel::buildNewtonTab</a></div><div class="ttdeci">QWidget * buildNewtonTab()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:121</div></div>
+<div class="ttc" id="aclass_function_panel_html_a2d5d7db3a79e75cfd2d941941e4ff985"><div class="ttname"><a href="class_function_panel.html#a2d5d7db3a79e75cfd2d941941e4ff985">FunctionPanel::FunctionPanel</a></div><div class="ttdeci">FunctionPanel(QWidget *parent=nullptr)</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:23</div></div>
+<div class="ttc" id="aclass_function_panel_html_a2e1ca9198c332ba331f93f7696224d41"><div class="ttname"><a href="class_function_panel.html#a2e1ca9198c332ba331f93f7696224d41">FunctionPanel::m_stegoStatus</a></div><div class="ttdeci">QLabel * m_stegoStatus</div><div class="ttdef"><b>Определения</b> functionpanel.h:64</div></div>
+<div class="ttc" id="aclass_function_panel_html_a39cce2bb88cd9f0b0fa430a50cac2de5"><div class="ttname"><a href="class_function_panel.html#a39cce2bb88cd9f0b0fa430a50cac2de5">FunctionPanel::m_rsaStatus</a></div><div class="ttdeci">QLabel * m_rsaStatus</div><div class="ttdef"><b>Определения</b> functionpanel.h:49</div></div>
+<div class="ttc" id="aclass_function_panel_html_a40c7f01ddce31ee186e799023de618ec"><div class="ttname"><a href="class_function_panel.html#a40c7f01ddce31ee186e799023de618ec">FunctionPanel::m_newtonX0</a></div><div class="ttdeci">QLineEdit * m_newtonX0</div><div class="ttdef"><b>Определения</b> functionpanel.h:57</div></div>
+<div class="ttc" id="aclass_function_panel_html_a454c12c2881d95ce8bd5e5a8f874c08d"><div class="ttname"><a href="class_function_panel.html#a454c12c2881d95ce8bd5e5a8f874c08d">FunctionPanel::m_stegoFilePath</a></div><div class="ttdeci">QString m_stegoFilePath</div><div class="ttdef"><b>Определения</b> functionpanel.h:65</div></div>
+<div class="ttc" id="aclass_function_panel_html_a560f5fcc3598309e6543c64d85da511a"><div class="ttname"><a href="class_function_panel.html#a560f5fcc3598309e6543c64d85da511a">FunctionPanel::m_pendingAction</a></div><div class="ttdeci">QString m_pendingAction</div><div class="ttdef"><b>Определения</b> functionpanel.h:66</div></div>
+<div class="ttc" id="aclass_function_panel_html_a6644b567d428f0a29a46bc01772cc046"><div class="ttname"><a href="class_function_panel.html#a6644b567d428f0a29a46bc01772cc046">FunctionPanel::m_stegoMessage</a></div><div class="ttdeci">QLineEdit * m_stegoMessage</div><div class="ttdef"><b>Определения</b> functionpanel.h:63</div></div>
+<div class="ttc" id="aclass_function_panel_html_a6afe059a7266a629e5a6f4bacda15488"><div class="ttname"><a href="class_function_panel.html#a6afe059a7266a629e5a6f4bacda15488">FunctionPanel::onSha1Hash</a></div><div class="ttdeci">void onSha1Hash()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:231</div></div>
+<div class="ttc" id="aclass_function_panel_html_a7067dea9591465da0ffe51665a50c3ae"><div class="ttname"><a href="class_function_panel.html#a7067dea9591465da0ffe51665a50c3ae">FunctionPanel::buildStegoTab</a></div><div class="ttdeci">QWidget * buildStegoTab()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:155</div></div>
+<div class="ttc" id="aclass_function_panel_html_a71915838c272980f83b01743da9606c7"><div class="ttname"><a href="class_function_panel.html#a71915838c272980f83b01743da9606c7">FunctionPanel::onExtractAudio</a></div><div class="ttdeci">void onExtractAudio()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:274</div></div>
+<div class="ttc" id="aclass_function_panel_html_a7d5562fb8f65db2c086cf1cdfe237e4c"><div class="ttname"><a href="class_function_panel.html#a7d5562fb8f65db2c086cf1cdfe237e4c">FunctionPanel::m_rsaInput</a></div><div class="ttdeci">QTextEdit * m_rsaInput</div><div class="ttdef"><b>Определения</b> functionpanel.h:46</div></div>
+<div class="ttc" id="aclass_function_panel_html_a910a0dbcc89bc68c30c537c13eca057f"><div class="ttname"><a href="class_function_panel.html#a910a0dbcc89bc68c30c537c13eca057f">FunctionPanel::m_rsaKeys</a></div><div class="ttdeci">QTextEdit * m_rsaKeys</div><div class="ttdef"><b>Определения</b> functionpanel.h:48</div></div>
+<div class="ttc" id="aclass_function_panel_html_a914ccddd21110532842a9b25618ead2d"><div class="ttname"><a href="class_function_panel.html#a914ccddd21110532842a9b25618ead2d">FunctionPanel::m_rsaEncrypted</a></div><div class="ttdeci">QTextEdit * m_rsaEncrypted</div><div class="ttdef"><b>Определения</b> functionpanel.h:47</div></div>
+<div class="ttc" id="aclass_function_panel_html_a94a8948c97048f88ee7529f3b28f6e63"><div class="ttname"><a href="class_function_panel.html#a94a8948c97048f88ee7529f3b28f6e63">FunctionPanel::m_newtonTable</a></div><div class="ttdeci">ResultTable * m_newtonTable</div><div class="ttdef"><b>Определения</b> functionpanel.h:58</div></div>
+<div class="ttc" id="aclass_function_panel_html_aa19aaefd1edf7145d73853b29f03b257"><div class="ttname"><a href="class_function_panel.html#aa19aaefd1edf7145d73853b29f03b257">FunctionPanel::m_stegoFile</a></div><div class="ttdeci">QLabel * m_stegoFile</div><div class="ttdef"><b>Определения</b> functionpanel.h:62</div></div>
+<div class="ttc" id="aclass_function_panel_html_abff4160d664a70c633ef4393dd08fab4"><div class="ttname"><a href="class_function_panel.html#abff4160d664a70c633ef4393dd08fab4">FunctionPanel::onResponse</a></div><div class="ttdeci">void onResponse(const QJsonObject &amp;resp)</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:297</div></div>
+<div class="ttc" id="aclass_function_panel_html_acba7dde974c62940bf72b41afb04e033"><div class="ttname"><a href="class_function_panel.html#acba7dde974c62940bf72b41afb04e033">FunctionPanel::buildRsaTab</a></div><div class="ttdeci">QWidget * buildRsaTab()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:44</div></div>
+<div class="ttc" id="aclass_function_panel_html_acc9f052b6a2a9a9acd404608a607e230"><div class="ttname"><a href="class_function_panel.html#acc9f052b6a2a9a9acd404608a607e230">FunctionPanel::setupUi</a></div><div class="ttdeci">void setupUi()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:29</div></div>
+<div class="ttc" id="aclass_function_panel_html_adb82fa5b98439020e7c18326ef217df3"><div class="ttname"><a href="class_function_panel.html#adb82fa5b98439020e7c18326ef217df3">FunctionPanel::onNewtonSolve</a></div><div class="ttdeci">void onNewtonSolve()</div><div class="ttdef"><b>Определения</b> functionpanel.cpp:240</div></div>
+<div class="ttc" id="aclass_function_panel_html_adca4df26f17c56c94172baf8c65c99db"><div class="ttname"><a href="class_function_panel.html#adca4df26f17c56c94172baf8c65c99db">FunctionPanel::m_sha1Result</a></div><div class="ttdeci">QLabel * m_sha1Result</div><div class="ttdef"><b>Определения</b> functionpanel.h:53</div></div>
+<div class="ttc" id="aclass_function_panel_html_ae992a74d19f46d543fe84871d21161a2"><div class="ttname"><a href="class_function_panel.html#ae992a74d19f46d543fe84871d21161a2">FunctionPanel::m_newtonFunc</a></div><div class="ttdeci">QComboBox * m_newtonFunc</div><div class="ttdef"><b>Определения</b> functionpanel.h:56</div></div>
+<div class="ttc" id="aclass_function_panel_html_af27000c74b91a555523ba120d4ee3e5a"><div class="ttname"><a href="class_function_panel.html#af27000c74b91a555523ba120d4ee3e5a">FunctionPanel::m_sha1Input</a></div><div class="ttdeci">QLineEdit * m_sha1Input</div><div class="ttdef"><b>Определения</b> functionpanel.h:52</div></div>
+<div class="ttc" id="aclass_function_panel_html_afcd667772b0756fafc496c7ba894accc"><div class="ttname"><a href="class_function_panel.html#afcd667772b0756fafc496c7ba894accc">FunctionPanel::m_lastWavData</a></div><div class="ttdeci">QByteArray m_lastWavData</div><div class="ttdef"><b>Определения</b> functionpanel.h:68</div></div>
+<div class="ttc" id="aclass_result_table_html"><div class="ttname"><a href="class_result_table.html">ResultTable</a></div><div class="ttdoc">Таблица для отображения результатов операций.</div><div class="ttdef"><b>Определения</b> resulttable.h:8</div></div>
+<div class="ttc" id="aresulttable_8h_html"><div class="ttname"><a href="resulttable_8h.html">resulttable.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a2250f4254521757ff5b46daad032e7c.html">Var6Client</a></li><li class="navelem"><a href="dir_5b655a41a120810f6c0d03b1b095e626.html">src</a></li><li class="navelem"><a href="functionpanel_8h.html">functionpanel.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="FunctionPanel::onNewtonSolve" name="FunctionPanel::onNewtonSolve">
+<area shape="rect" id="Node000001" title=" " alt="" coords="707,5,912,32"/>
+<area shape="rect" id="Node000002" href="$class_function_panel.html#a2b7fb74dd54e7a469be9a8e3f9e63fec" title=" " alt="" coords="454,5,659,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,19,660,21,660,16,694,19"/>
+<area shape="rect" id="Node000003" href="$class_function_panel.html#acc9f052b6a2a9a9acd404608a607e230" title=" " alt="" coords="249,5,406,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,19,407,21,406,16,441,19"/>
+<area shape="rect" id="Node000004" href="$class_function_panel.html#a2d5d7db3a79e75cfd2d941941e4ff985" title=" " alt="" coords="5,5,201,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="231,19,201,21,201,16,236,19"/>
+</map>

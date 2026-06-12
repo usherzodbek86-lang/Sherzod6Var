@@ -1,0 +1,21 @@
+<map id="LoginWindow::onResponse" name="LoginWindow::onResponse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,111,186,137"/>
+<area shape="rect" id="Node000002" href="$class_network_manager.html#a160c056e7177dbe9686310e4896326d6" title=" " alt="" coords="244,35,440,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,108,233,71,264,65,259,67,234,76,132,113"/>
+<area shape="rect" id="Node000008" href="$class_login_window.html#a1cbdd5a9f471d6e948d1565f5c18022b" title=" " alt="" coords="250,85,435,112"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="185,112,236,109,231,111,187,117"/>
+<area shape="rect" id="Node000009" href="$class_network_manager.html#af4650242e7c7996a577852a41f8a0810" title=" " alt="" coords="234,136,451,163"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="186,131,221,136,216,137,186,136"/>
+<area shape="rect" id="Node000010" href="$class_login_window.html#a4095f3828566b4386908dc2844c28f1d" title=" " alt="" coords="261,187,424,213"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="131,135,234,172,264,182,259,182,233,177,130,141"/>
+<area shape="rect" id="Node000003" href="$class_network_manager.html#a5aaf71c4aa7a2efab7f1dbae02312280" title=" " alt="" coords="499,35,726,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,45,486,47,481,49,441,51"/>
+<area shape="rect" id="Node000004" href="$class_network_manager.html#a0028518c2761defad4d923b42493463b" title=" " alt="" coords="774,8,997,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="726,34,761,33,756,34,727,40"/>
+<area shape="rect" id="Node000006" href="$class_network_manager.html#a8c95ebaf4720e37c5dfbe3433970c209" title=" " alt="" coords="780,60,991,87"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="726,56,767,62,762,62,727,61"/>
+<area shape="rect" id="Node000005" href="$class_network_manager.html#ac6ae166f8298c7dcd6c047af4e032417" title=" " alt="" coords="1045,5,1261,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="997,18,1032,20,1027,20,997,23"/>
+<area shape="rect" id="Node000007" href="$class_network_manager.html#aaf71ebc15b863819ebb5705bc41ad93d" title=" " alt="" coords="1062,56,1244,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="992,72,1049,76,1044,76,992,78"/>
+</map>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Var6 — Система шифрования и стеганографии: Класс FunctionPanel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Var6 — Система шифрования и стеганографии<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа. Группа 251-354. Ахроров Шерзодбек Туймурод угли</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_function_panel.html','','class_function_panel-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс FunctionPanel</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Панель с четырьмя вкладками для функций варианта: RSA, SHA-1, Метод Ньютона, Стеганография (WAV).  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="functionpanel_8h_source.html">functionpanel.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:FunctionPanel:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel__inherit__graph.svg" width="115" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса FunctionPanel:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel__coll__graph.svg" width="226" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2d5d7db3a79e75cfd2d941941e4ff985" id="r_a2d5d7db3a79e75cfd2d941941e4ff985"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2d5d7db3a79e75cfd2d941941e4ff985">FunctionPanel</a> (QWidget *parent=nullptr)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-slots" class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:abff4160d664a70c633ef4393dd08fab4" id="r_abff4160d664a70c633ef4393dd08fab4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abff4160d664a70c633ef4393dd08fab4">onResponse</a> (const QJsonObject &amp;resp)</td></tr>
+<tr class="memitem:a14c947c65c33e3603d670aaa6938df14" id="r_a14c947c65c33e3603d670aaa6938df14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14c947c65c33e3603d670aaa6938df14">onRsaEncrypt</a> ()</td></tr>
+<tr class="memitem:a13229f11c1e90edb6c7efc867cfa4dd4" id="r_a13229f11c1e90edb6c7efc867cfa4dd4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a13229f11c1e90edb6c7efc867cfa4dd4">onRsaDecrypt</a> ()</td></tr>
+<tr class="memitem:a6afe059a7266a629e5a6f4bacda15488" id="r_a6afe059a7266a629e5a6f4bacda15488"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6afe059a7266a629e5a6f4bacda15488">onSha1Hash</a> ()</td></tr>
+<tr class="memitem:adb82fa5b98439020e7c18326ef217df3" id="r_adb82fa5b98439020e7c18326ef217df3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb82fa5b98439020e7c18326ef217df3">onNewtonSolve</a> ()</td></tr>
+<tr class="memitem:a22a6f067f8e61ce0cc829b254701e25c" id="r_a22a6f067f8e61ce0cc829b254701e25c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22a6f067f8e61ce0cc829b254701e25c">onEmbedAudio</a> ()</td></tr>
+<tr class="memitem:a71915838c272980f83b01743da9606c7" id="r_a71915838c272980f83b01743da9606c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71915838c272980f83b01743da9606c7">onExtractAudio</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:acba7dde974c62940bf72b41afb04e033" id="r_acba7dde974c62940bf72b41afb04e033"><td class="memItemLeft">QWidget *&#160;</td><td class="memItemRight"><a class="el" href="#acba7dde974c62940bf72b41afb04e033">buildRsaTab</a> ()</td></tr>
+<tr class="memitem:a00db863aeeaf45d183bdc633882f9bb8" id="r_a00db863aeeaf45d183bdc633882f9bb8"><td class="memItemLeft">QWidget *&#160;</td><td class="memItemRight"><a class="el" href="#a00db863aeeaf45d183bdc633882f9bb8">buildSha1Tab</a> ()</td></tr>
+<tr class="memitem:a2b7fb74dd54e7a469be9a8e3f9e63fec" id="r_a2b7fb74dd54e7a469be9a8e3f9e63fec"><td class="memItemLeft">QWidget *&#160;</td><td class="memItemRight"><a class="el" href="#a2b7fb74dd54e7a469be9a8e3f9e63fec">buildNewtonTab</a> ()</td></tr>
+<tr class="memitem:a7067dea9591465da0ffe51665a50c3ae" id="r_a7067dea9591465da0ffe51665a50c3ae"><td class="memItemLeft">QWidget *&#160;</td><td class="memItemRight"><a class="el" href="#a7067dea9591465da0ffe51665a50c3ae">buildStegoTab</a> ()</td></tr>
+<tr class="memitem:acc9f052b6a2a9a9acd404608a607e230" id="r_acc9f052b6a2a9a9acd404608a607e230"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acc9f052b6a2a9a9acd404608a607e230">setupUi</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a7d5562fb8f65db2c086cf1cdfe237e4c" id="r_a7d5562fb8f65db2c086cf1cdfe237e4c"><td class="memItemLeft">QTextEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a7d5562fb8f65db2c086cf1cdfe237e4c">m_rsaInput</a></td></tr>
+<tr class="memitem:a914ccddd21110532842a9b25618ead2d" id="r_a914ccddd21110532842a9b25618ead2d"><td class="memItemLeft">QTextEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a914ccddd21110532842a9b25618ead2d">m_rsaEncrypted</a></td></tr>
+<tr class="memitem:a910a0dbcc89bc68c30c537c13eca057f" id="r_a910a0dbcc89bc68c30c537c13eca057f"><td class="memItemLeft">QTextEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a910a0dbcc89bc68c30c537c13eca057f">m_rsaKeys</a></td></tr>
+<tr class="memitem:a39cce2bb88cd9f0b0fa430a50cac2de5" id="r_a39cce2bb88cd9f0b0fa430a50cac2de5"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a39cce2bb88cd9f0b0fa430a50cac2de5">m_rsaStatus</a></td></tr>
+<tr class="memitem:af27000c74b91a555523ba120d4ee3e5a" id="r_af27000c74b91a555523ba120d4ee3e5a"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#af27000c74b91a555523ba120d4ee3e5a">m_sha1Input</a></td></tr>
+<tr class="memitem:adca4df26f17c56c94172baf8c65c99db" id="r_adca4df26f17c56c94172baf8c65c99db"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#adca4df26f17c56c94172baf8c65c99db">m_sha1Result</a></td></tr>
+<tr class="memitem:ae992a74d19f46d543fe84871d21161a2" id="r_ae992a74d19f46d543fe84871d21161a2"><td class="memItemLeft">QComboBox *&#160;</td><td class="memItemRight"><a class="el" href="#ae992a74d19f46d543fe84871d21161a2">m_newtonFunc</a></td></tr>
+<tr class="memitem:a40c7f01ddce31ee186e799023de618ec" id="r_a40c7f01ddce31ee186e799023de618ec"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a40c7f01ddce31ee186e799023de618ec">m_newtonX0</a></td></tr>
+<tr class="memitem:a94a8948c97048f88ee7529f3b28f6e63" id="r_a94a8948c97048f88ee7529f3b28f6e63"><td class="memItemLeft"><a class="el" href="class_result_table.html">ResultTable</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a94a8948c97048f88ee7529f3b28f6e63">m_newtonTable</a></td></tr>
+<tr class="memitem:a26c8511841a1d8d72977d08bfa8a6ec4" id="r_a26c8511841a1d8d72977d08bfa8a6ec4"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a26c8511841a1d8d72977d08bfa8a6ec4">m_newtonRoot</a></td></tr>
+<tr class="memitem:aa19aaefd1edf7145d73853b29f03b257" id="r_aa19aaefd1edf7145d73853b29f03b257"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#aa19aaefd1edf7145d73853b29f03b257">m_stegoFile</a></td></tr>
+<tr class="memitem:a6644b567d428f0a29a46bc01772cc046" id="r_a6644b567d428f0a29a46bc01772cc046"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a6644b567d428f0a29a46bc01772cc046">m_stegoMessage</a></td></tr>
+<tr class="memitem:a2e1ca9198c332ba331f93f7696224d41" id="r_a2e1ca9198c332ba331f93f7696224d41"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a2e1ca9198c332ba331f93f7696224d41">m_stegoStatus</a></td></tr>
+<tr class="memitem:a454c12c2881d95ce8bd5e5a8f874c08d" id="r_a454c12c2881d95ce8bd5e5a8f874c08d"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a454c12c2881d95ce8bd5e5a8f874c08d">m_stegoFilePath</a></td></tr>
+<tr class="memitem:a560f5fcc3598309e6543c64d85da511a" id="r_a560f5fcc3598309e6543c64d85da511a"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a560f5fcc3598309e6543c64d85da511a">m_pendingAction</a></td></tr>
+<tr class="memitem:afcd667772b0756fafc496c7ba894accc" id="r_afcd667772b0756fafc496c7ba894accc"><td class="memItemLeft">QByteArray&#160;</td><td class="memItemRight"><a class="el" href="#afcd667772b0756fafc496c7ba894accc">m_lastWavData</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Панель с четырьмя вкладками для функций варианта: RSA, SHA-1, Метод Ньютона, Стеганография (WAV). </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a2d5d7db3a79e75cfd2d941941e4ff985" name="a2d5d7db3a79e75cfd2d941941e4ff985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5d7db3a79e75cfd2d941941e4ff985">&#9670;&#160;</a></span>FunctionPanel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionPanel::FunctionPanel </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a2d5d7db3a79e75cfd2d941941e4ff985_cgraph.svg" width="2008" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a2b7fb74dd54e7a469be9a8e3f9e63fec" name="a2b7fb74dd54e7a469be9a8e3f9e63fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b7fb74dd54e7a469be9a8e3f9e63fec">&#9670;&#160;</a></span>buildNewtonTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * FunctionPanel::buildNewtonTab </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a2b7fb74dd54e7a469be9a8e3f9e63fec_cgraph.svg" width="1532" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a2b7fb74dd54e7a469be9a8e3f9e63fec_icgraph.svg" width="666" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acba7dde974c62940bf72b41afb04e033" name="acba7dde974c62940bf72b41afb04e033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba7dde974c62940bf72b41afb04e033">&#9670;&#160;</a></span>buildRsaTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * FunctionPanel::buildRsaTab </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_acba7dde974c62940bf72b41afb04e033_cgraph.svg" width="1503" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_acba7dde974c62940bf72b41afb04e033_icgraph.svg" width="644" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a00db863aeeaf45d183bdc633882f9bb8" name="a00db863aeeaf45d183bdc633882f9bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00db863aeeaf45d183bdc633882f9bb8">&#9670;&#160;</a></span>buildSha1Tab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * FunctionPanel::buildSha1Tab </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a00db863aeeaf45d183bdc633882f9bb8_cgraph.svg" width="1500" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a00db863aeeaf45d183bdc633882f9bb8_icgraph.svg" width="650" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7067dea9591465da0ffe51665a50c3ae" name="a7067dea9591465da0ffe51665a50c3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7067dea9591465da0ffe51665a50c3ae">&#9670;&#160;</a></span>buildStegoTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * FunctionPanel::buildStegoTab </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a7067dea9591465da0ffe51665a50c3ae_cgraph.svg" width="1518" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a7067dea9591465da0ffe51665a50c3ae_icgraph.svg" width="654" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a22a6f067f8e61ce0cc829b254701e25c" name="a22a6f067f8e61ce0cc829b254701e25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a6f067f8e61ce0cc829b254701e25c">&#9670;&#160;</a></span>onEmbedAudio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onEmbedAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a22a6f067f8e61ce0cc829b254701e25c_cgraph.svg" width="1275" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a22a6f067f8e61ce0cc829b254701e25c_icgraph.svg" width="903" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a71915838c272980f83b01743da9606c7" name="a71915838c272980f83b01743da9606c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71915838c272980f83b01743da9606c7">&#9670;&#160;</a></span>onExtractAudio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onExtractAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a71915838c272980f83b01743da9606c7_cgraph.svg" width="1243" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a71915838c272980f83b01743da9606c7_icgraph.svg" width="871" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="adb82fa5b98439020e7c18326ef217df3" name="adb82fa5b98439020e7c18326ef217df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb82fa5b98439020e7c18326ef217df3">&#9670;&#160;</a></span>onNewtonSolve</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onNewtonSolve </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_adb82fa5b98439020e7c18326ef217df3_cgraph.svg" width="1279" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_adb82fa5b98439020e7c18326ef217df3_icgraph.svg" width="918" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abff4160d664a70c633ef4393dd08fab4" name="abff4160d664a70c633ef4393dd08fab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff4160d664a70c633ef4393dd08fab4">&#9670;&#160;</a></span>onResponse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onResponse </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>resp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_abff4160d664a70c633ef4393dd08fab4_icgraph.svg" width="440" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a13229f11c1e90edb6c7efc867cfa4dd4" name="a13229f11c1e90edb6c7efc867cfa4dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13229f11c1e90edb6c7efc867cfa4dd4">&#9670;&#160;</a></span>onRsaDecrypt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onRsaDecrypt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a13229f11c1e90edb6c7efc867cfa4dd4_cgraph.svg" width="1271" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a13229f11c1e90edb6c7efc867cfa4dd4_icgraph.svg" width="888" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a14c947c65c33e3603d670aaa6938df14" name="a14c947c65c33e3603d670aaa6938df14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c947c65c33e3603d670aaa6938df14">&#9670;&#160;</a></span>onRsaEncrypt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onRsaEncrypt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a14c947c65c33e3603d670aaa6938df14_cgraph.svg" width="1270" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a14c947c65c33e3603d670aaa6938df14_icgraph.svg" width="887" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6afe059a7266a629e5a6f4bacda15488" name="a6afe059a7266a629e5a6f4bacda15488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afe059a7266a629e5a6f4bacda15488">&#9670;&#160;</a></span>onSha1Hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::onSha1Hash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a6afe059a7266a629e5a6f4bacda15488_cgraph.svg" width="1262" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_a6afe059a7266a629e5a6f4bacda15488_icgraph.svg" width="886" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acc9f052b6a2a9a9acd404608a607e230" name="acc9f052b6a2a9a9acd404608a607e230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9f052b6a2a9a9acd404608a607e230">&#9670;&#160;</a></span>setupUi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionPanel::setupUi </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_acc9f052b6a2a9a9acd404608a607e230_cgraph.svg" width="1738" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_function_panel_acc9f052b6a2a9a9acd404608a607e230_icgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="afcd667772b0756fafc496c7ba894accc" name="afcd667772b0756fafc496c7ba894accc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd667772b0756fafc496c7ba894accc">&#9670;&#160;</a></span>m_lastWavData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray FunctionPanel::m_lastWavData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae992a74d19f46d543fe84871d21161a2" name="ae992a74d19f46d543fe84871d21161a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae992a74d19f46d543fe84871d21161a2">&#9670;&#160;</a></span>m_newtonFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* FunctionPanel::m_newtonFunc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26c8511841a1d8d72977d08bfa8a6ec4" name="a26c8511841a1d8d72977d08bfa8a6ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c8511841a1d8d72977d08bfa8a6ec4">&#9670;&#160;</a></span>m_newtonRoot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* FunctionPanel::m_newtonRoot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94a8948c97048f88ee7529f3b28f6e63" name="a94a8948c97048f88ee7529f3b28f6e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a8948c97048f88ee7529f3b28f6e63">&#9670;&#160;</a></span>m_newtonTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_result_table.html">ResultTable</a>* FunctionPanel::m_newtonTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40c7f01ddce31ee186e799023de618ec" name="a40c7f01ddce31ee186e799023de618ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c7f01ddce31ee186e799023de618ec">&#9670;&#160;</a></span>m_newtonX0</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* FunctionPanel::m_newtonX0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a560f5fcc3598309e6543c64d85da511a" name="a560f5fcc3598309e6543c64d85da511a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560f5fcc3598309e6543c64d85da511a">&#9670;&#160;</a></span>m_pendingAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FunctionPanel::m_pendingAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a914ccddd21110532842a9b25618ead2d" name="a914ccddd21110532842a9b25618ead2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914ccddd21110532842a9b25618ead2d">&#9670;&#160;</a></span>m_rsaEncrypted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextEdit* FunctionPanel::m_rsaEncrypted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d5562fb8f65db2c086cf1cdfe237e4c" name="a7d5562fb8f65db2c086cf1cdfe237e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5562fb8f65db2c086cf1cdfe237e4c">&#9670;&#160;</a></span>m_rsaInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextEdit* FunctionPanel::m_rsaInput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a910a0dbcc89bc68c30c537c13eca057f" name="a910a0dbcc89bc68c30c537c13eca057f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910a0dbcc89bc68c30c537c13eca057f">&#9670;&#160;</a></span>m_rsaKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextEdit* FunctionPanel::m_rsaKeys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39cce2bb88cd9f0b0fa430a50cac2de5" name="a39cce2bb88cd9f0b0fa430a50cac2de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39cce2bb88cd9f0b0fa430a50cac2de5">&#9670;&#160;</a></span>m_rsaStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* FunctionPanel::m_rsaStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af27000c74b91a555523ba120d4ee3e5a" name="af27000c74b91a555523ba120d4ee3e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27000c74b91a555523ba120d4ee3e5a">&#9670;&#160;</a></span>m_sha1Input</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* FunctionPanel::m_sha1Input</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adca4df26f17c56c94172baf8c65c99db" name="adca4df26f17c56c94172baf8c65c99db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca4df26f17c56c94172baf8c65c99db">&#9670;&#160;</a></span>m_sha1Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* FunctionPanel::m_sha1Result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa19aaefd1edf7145d73853b29f03b257" name="aa19aaefd1edf7145d73853b29f03b257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa19aaefd1edf7145d73853b29f03b257">&#9670;&#160;</a></span>m_stegoFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* FunctionPanel::m_stegoFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a454c12c2881d95ce8bd5e5a8f874c08d" name="a454c12c2881d95ce8bd5e5a8f874c08d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454c12c2881d95ce8bd5e5a8f874c08d">&#9670;&#160;</a></span>m_stegoFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FunctionPanel::m_stegoFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6644b567d428f0a29a46bc01772cc046" name="a6644b567d428f0a29a46bc01772cc046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6644b567d428f0a29a46bc01772cc046">&#9670;&#160;</a></span>m_stegoMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* FunctionPanel::m_stegoMessage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e1ca9198c332ba331f93f7696224d41" name="a2e1ca9198c332ba331f93f7696224d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1ca9198c332ba331f93f7696224d41">&#9670;&#160;</a></span>m_stegoStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* FunctionPanel::m_stegoStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Var6Client/src/<a class="el" href="functionpanel_8h_source.html">functionpanel.h</a></li>
+<li>Var6Client/src/<a class="el" href="functionpanel_8cpp.html">functionpanel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_function_panel.html">FunctionPanel</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

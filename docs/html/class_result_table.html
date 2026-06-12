@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Var6 — Система шифрования и стеганографии: Класс ResultTable</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Var6 — Система шифрования и стеганографии<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа. Группа 251-354. Ахроров Шерзодбек Туймурод угли</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_result_table.html','','class_result_table-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс ResultTable</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Таблица для отображения результатов операций.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="resulttable_8h_source.html">resulttable.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ResultTable:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_result_table__inherit__graph.svg" width="115" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса ResultTable:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_result_table__coll__graph.svg" width="115" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0fdeac1bf35304c1a38929b2986c7209" id="r_a0fdeac1bf35304c1a38929b2986c7209"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0fdeac1bf35304c1a38929b2986c7209">ResultTable</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:ab7b7c67ed7e9d3bea62043a1c3db3831" id="r_ab7b7c67ed7e9d3bea62043a1c3db3831"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab7b7c67ed7e9d3bea62043a1c3db3831">showResult</a> (const QList&lt; QPair&lt; QString, QString &gt; &gt; &amp;rows)</td></tr>
+<tr class="memdesc:ab7b7c67ed7e9d3bea62043a1c3db3831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать одну строку результата: список пар "ключ-значение".  <br /></td></tr>
+<tr class="memitem:a61aecdb5862a96f3feed726d0ae85234" id="r_a61aecdb5862a96f3feed726d0ae85234"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61aecdb5862a96f3feed726d0ae85234">showUsers</a> (const QJsonArray &amp;users)</td></tr>
+<tr class="memdesc:a61aecdb5862a96f3feed726d0ae85234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Показать список пользователей (для панели администратора).  <br /></td></tr>
+<tr class="memitem:a4c0225e122ee3c65b9479de0961af305" id="r_a4c0225e122ee3c65b9479de0961af305"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4c0225e122ee3c65b9479de0961af305">clearAll</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a517c1eba1acda7d1ddf58a57e0319571" id="r_a517c1eba1acda7d1ddf58a57e0319571"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a517c1eba1acda7d1ddf58a57e0319571">setupStyle</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Таблица для отображения результатов операций. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a0fdeac1bf35304c1a38929b2986c7209" name="a0fdeac1bf35304c1a38929b2986c7209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdeac1bf35304c1a38929b2986c7209">&#9670;&#160;</a></span>ResultTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultTable::ResultTable </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_result_table_a0fdeac1bf35304c1a38929b2986c7209_cgraph.svg" width="387" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a4c0225e122ee3c65b9479de0961af305" name="a4c0225e122ee3c65b9479de0961af305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0225e122ee3c65b9479de0961af305">&#9670;&#160;</a></span>clearAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResultTable::clearAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a517c1eba1acda7d1ddf58a57e0319571" name="a517c1eba1acda7d1ddf58a57e0319571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517c1eba1acda7d1ddf58a57e0319571">&#9670;&#160;</a></span>setupStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResultTable::setupStyle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_result_table_a517c1eba1acda7d1ddf58a57e0319571_icgraph.svg" width="387" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab7b7c67ed7e9d3bea62043a1c3db3831" name="ab7b7c67ed7e9d3bea62043a1c3db3831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b7c67ed7e9d3bea62043a1c3db3831">&#9670;&#160;</a></span>showResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResultTable::showResult </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; QPair&lt; QString, QString &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rows</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Показать одну строку результата: список пар "ключ-значение". </p>
+
+</div>
+</div>
+<a id="a61aecdb5862a96f3feed726d0ae85234" name="a61aecdb5862a96f3feed726d0ae85234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61aecdb5862a96f3feed726d0ae85234">&#9670;&#160;</a></span>showUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResultTable::showUsers </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>users</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Показать список пользователей (для панели администратора). </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Var6Client/src/<a class="el" href="resulttable_8h_source.html">resulttable.h</a></li>
+<li>Var6Client/src/<a class="el" href="resulttable_8cpp.html">resulttable.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_result_table.html">ResultTable</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

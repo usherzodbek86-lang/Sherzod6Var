@@ -1,0 +1,5 @@
+<map id="NetworkManager::sendRequest" name="NetworkManager::sendRequest">
+<area shape="rect" id="Node000001" title="Отправить JSON&#45;запрос." alt="" coords="5,5,211,32"/>
+<area shape="rect" id="Node000002" href="$class_network_manager.html#a97d1fb741f609c2442efdfd92e944ed2" title=" " alt="" coords="259,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,16,246,19,241,19,211,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Var6Client/src/networkmanager.h" name="Var6Client/src/networkmanager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,5,252,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,75,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,32,72,73,69,69,124,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,80,192,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,31,148,66,143,63,144,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="217,80,314,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,30,234,71,229,72,166,35"/>
+</map>

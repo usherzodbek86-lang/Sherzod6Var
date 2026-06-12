@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Var6 — Система шифрования и стеганографии: Класс NetworkManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Var6 — Система шифрования и стеганографии<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Курсовая работа. Группа 251-354. Ахроров Шерзодбек Туймурод угли</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_network_manager.html','','class_network_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс NetworkManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Singleton для сетевого взаимодействия с сервером.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="networkmanager_8h_source.html">networkmanager.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:NetworkManager:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager__inherit__graph.svg" width="131" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса NetworkManager:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager__coll__graph.svg" width="227" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-signals" class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:aaf71ebc15b863819ebb5705bc41ad93d" id="r_aaf71ebc15b863819ebb5705bc41ad93d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf71ebc15b863819ebb5705bc41ad93d">responseReceived</a> (const QJsonObject &amp;resp)</td></tr>
+<tr class="memitem:ac6ae166f8298c7dcd6c047af4e032417" id="r_ac6ae166f8298c7dcd6c047af4e032417"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac6ae166f8298c7dcd6c047af4e032417">connectionLost</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a719594f4ef432f963a90d98fd69c6d73" id="r_a719594f4ef432f963a90d98fd69c6d73"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a719594f4ef432f963a90d98fd69c6d73">connectToServer</a> (const QString &amp;host=&quot;127.0.0.1&quot;, quint16 port=9000)</td></tr>
+<tr class="memdesc:a719594f4ef432f963a90d98fd69c6d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подключиться к серверу.  <br /></td></tr>
+<tr class="memitem:a00f9107b88e93c583b4fd540b6dedf1a" id="r_a00f9107b88e93c583b4fd540b6dedf1a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a00f9107b88e93c583b4fd540b6dedf1a">sendRequest</a> (const QJsonObject &amp;req)</td></tr>
+<tr class="memdesc:a00f9107b88e93c583b4fd540b6dedf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправить JSON-запрос.  <br /></td></tr>
+<tr class="memitem:a97d1fb741f609c2442efdfd92e944ed2" id="r_a97d1fb741f609c2442efdfd92e944ed2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a97d1fb741f609c2442efdfd92e944ed2">isConnected</a> () const</td></tr>
+<tr class="memitem:a1d616bcace08d4e9e0cdbabf54e4648f" id="r_a1d616bcace08d4e9e0cdbabf54e4648f"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a1d616bcace08d4e9e0cdbabf54e4648f">currentLogin</a> () const</td></tr>
+<tr class="memitem:a9f643f7813bbad148ceb897d71195b02" id="r_a9f643f7813bbad148ceb897d71195b02"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a9f643f7813bbad148ceb897d71195b02">currentRole</a> () const</td></tr>
+<tr class="memitem:af4650242e7c7996a577852a41f8a0810" id="r_af4650242e7c7996a577852a41f8a0810"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af4650242e7c7996a577852a41f8a0810">setCurrentUser</a> (const QString &amp;login, const QString &amp;role)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a160c056e7177dbe9686310e4896326d6" id="r_a160c056e7177dbe9686310e4896326d6"><td class="memItemLeft">static <a class="el" href="class_network_manager.html">NetworkManager</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a160c056e7177dbe9686310e4896326d6">getInstance</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-slots" class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a8c95ebaf4720e37c5dfbe3433970c209" id="r_a8c95ebaf4720e37c5dfbe3433970c209"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8c95ebaf4720e37c5dfbe3433970c209">onReadyRead</a> ()</td></tr>
+<tr class="memitem:a0028518c2761defad4d923b42493463b" id="r_a0028518c2761defad4d923b42493463b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0028518c2761defad4d923b42493463b">onDisconnected</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a5aaf71c4aa7a2efab7f1dbae02312280" id="r_a5aaf71c4aa7a2efab7f1dbae02312280"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5aaf71c4aa7a2efab7f1dbae02312280">NetworkManager</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:abd13bcb5398c31f8bd0cc167c6b32df8" id="r_abd13bcb5398c31f8bd0cc167c6b32df8"><td class="memItemLeft">QTcpSocket *&#160;</td><td class="memItemRight"><a class="el" href="#abd13bcb5398c31f8bd0cc167c6b32df8">m_socket</a></td></tr>
+<tr class="memitem:a25f077fc6f83702f71eb2d188a7782b2" id="r_a25f077fc6f83702f71eb2d188a7782b2"><td class="memItemLeft">QByteArray&#160;</td><td class="memItemRight"><a class="el" href="#a25f077fc6f83702f71eb2d188a7782b2">m_buffer</a></td></tr>
+<tr class="memitem:aca79465ab8124fa07a5dffe6718b870c" id="r_aca79465ab8124fa07a5dffe6718b870c"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#aca79465ab8124fa07a5dffe6718b870c">m_login</a></td></tr>
+<tr class="memitem:afbcb32fa40f8593ffc31f277514dac97" id="r_afbcb32fa40f8593ffc31f277514dac97"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#afbcb32fa40f8593ffc31f277514dac97">m_role</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a40ff5ab50b5f87a12634f39c08aafbc5" id="r_a40ff5ab50b5f87a12634f39c08aafbc5"><td class="memItemLeft">static <a class="el" href="class_network_manager.html">NetworkManager</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a40ff5ab50b5f87a12634f39c08aafbc5">s_instance</a> = nullptr</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Singleton для сетевого взаимодействия с сервером. </p>
+<p>Хранит одно TCP-соединение на всё время работы клиента. Отправляет JSON-запросы, испускает сигнал при получении ответа. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a5aaf71c4aa7a2efab7f1dbae02312280" name="a5aaf71c4aa7a2efab7f1dbae02312280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aaf71c4aa7a2efab7f1dbae02312280">&#9670;&#160;</a></span>NetworkManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetworkManager::NetworkManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a5aaf71c4aa7a2efab7f1dbae02312280_cgraph.svg" width="774" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a5aaf71c4aa7a2efab7f1dbae02312280_icgraph.svg" width="1466" height="915"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ac6ae166f8298c7dcd6c047af4e032417" name="ac6ae166f8298c7dcd6c047af4e032417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ae166f8298c7dcd6c047af4e032417">&#9670;&#160;</a></span>connectionLost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::connectionLost </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_ac6ae166f8298c7dcd6c047af4e032417_icgraph.svg" width="2000" height="814"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a719594f4ef432f963a90d98fd69c6d73" name="a719594f4ef432f963a90d98fd69c6d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719594f4ef432f963a90d98fd69c6d73">&#9670;&#160;</a></span>connectToServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkManager::connectToServer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>host</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;127.0.0.1&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint16</td>          <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">9000</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Подключиться к серверу. </p>
+
+</div>
+</div>
+<a id="a1d616bcace08d4e9e0cdbabf54e4648f" name="a1d616bcace08d4e9e0cdbabf54e4648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d616bcace08d4e9e0cdbabf54e4648f">&#9670;&#160;</a></span>currentLogin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString NetworkManager::currentLogin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f643f7813bbad148ceb897d71195b02" name="a9f643f7813bbad148ceb897d71195b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f643f7813bbad148ceb897d71195b02">&#9670;&#160;</a></span>currentRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString NetworkManager::currentRole </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a160c056e7177dbe9686310e4896326d6" name="a160c056e7177dbe9686310e4896326d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160c056e7177dbe9686310e4896326d6">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_network_manager.html">NetworkManager</a> * NetworkManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a160c056e7177dbe9686310e4896326d6_cgraph.svg" width="1018" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a160c056e7177dbe9686310e4896326d6_icgraph.svg" width="1190" height="915"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a97d1fb741f609c2442efdfd92e944ed2" name="a97d1fb741f609c2442efdfd92e944ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d1fb741f609c2442efdfd92e944ed2">&#9670;&#160;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkManager::isConnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a97d1fb741f609c2442efdfd92e944ed2_icgraph.svg" width="1432" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0028518c2761defad4d923b42493463b" name="a0028518c2761defad4d923b42493463b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0028518c2761defad4d923b42493463b">&#9670;&#160;</a></span>onDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::onDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a0028518c2761defad4d923b42493463b_cgraph.svg" width="498" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a0028518c2761defad4d923b42493463b_icgraph.svg" width="1735" height="915"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8c95ebaf4720e37c5dfbe3433970c209" name="a8c95ebaf4720e37c5dfbe3433970c209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c95ebaf4720e37c5dfbe3433970c209">&#9670;&#160;</a></span>onReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::onReadyRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a8c95ebaf4720e37c5dfbe3433970c209_cgraph.svg" width="452" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a8c95ebaf4720e37c5dfbe3433970c209_icgraph.svg" width="1724" height="915"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aaf71ebc15b863819ebb5705bc41ad93d" name="aaf71ebc15b863819ebb5705bc41ad93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf71ebc15b863819ebb5705bc41ad93d">&#9670;&#160;</a></span>responseReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::responseReceived </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>resp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_aaf71ebc15b863819ebb5705bc41ad93d_icgraph.svg" width="1954" height="947"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a00f9107b88e93c583b4fd540b6dedf1a" name="a00f9107b88e93c583b4fd540b6dedf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f9107b88e93c583b4fd540b6dedf1a">&#9670;&#160;</a></span>sendRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::sendRequest </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправить JSON-запрос. </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a00f9107b88e93c583b4fd540b6dedf1a_cgraph.svg" width="466" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_a00f9107b88e93c583b4fd540b6dedf1a_icgraph.svg" width="1183" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af4650242e7c7996a577852a41f8a0810" name="af4650242e7c7996a577852a41f8a0810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4650242e7c7996a577852a41f8a0810">&#9670;&#160;</a></span>setCurrentUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkManager::setCurrentUser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>role</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_network_manager_af4650242e7c7996a577852a41f8a0810_icgraph.svg" width="690" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a25f077fc6f83702f71eb2d188a7782b2" name="a25f077fc6f83702f71eb2d188a7782b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f077fc6f83702f71eb2d188a7782b2">&#9670;&#160;</a></span>m_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray NetworkManager::m_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca79465ab8124fa07a5dffe6718b870c" name="aca79465ab8124fa07a5dffe6718b870c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca79465ab8124fa07a5dffe6718b870c">&#9670;&#160;</a></span>m_login</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString NetworkManager::m_login</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbcb32fa40f8593ffc31f277514dac97" name="afbcb32fa40f8593ffc31f277514dac97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcb32fa40f8593ffc31f277514dac97">&#9670;&#160;</a></span>m_role</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString NetworkManager::m_role</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd13bcb5398c31f8bd0cc167c6b32df8" name="abd13bcb5398c31f8bd0cc167c6b32df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd13bcb5398c31f8bd0cc167c6b32df8">&#9670;&#160;</a></span>m_socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* NetworkManager::m_socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40ff5ab50b5f87a12634f39c08aafbc5" name="a40ff5ab50b5f87a12634f39c08aafbc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ff5ab50b5f87a12634f39c08aafbc5">&#9670;&#160;</a></span>s_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_network_manager.html">NetworkManager</a> * NetworkManager::s_instance = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Var6Client/src/<a class="el" href="networkmanager_8h_source.html">networkmanager.h</a></li>
+<li>Var6Client/src/<a class="el" href="networkmanager_8cpp.html">networkmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_network_manager.html">NetworkManager</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Основная информация о проекте
+PROJECT_NAME           = "Var6 — Система шифрования и стеганографии"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Курсовая работа. Группа 251-354. Ахроров Шерзодбек Туймурод угли"
+OUTPUT_DIRECTORY       = docs
+
+# Исходники
+INPUT                  = Var6Server/src Var6Client/src
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# HTML вывод
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_COLORSTYLE        = LIGHT
+
+# Латекс — выключаем, не нужен
+GENERATE_LATEX         = NO
+
+# Диаграммы (нужен graphviz)
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+DOT_IMAGE_FORMAT       = svg
+
+# Язык
+OUTPUT_LANGUAGE        = Russian
+
+# Прочее
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO

@@ -1,0 +1,6 @@
+<map id="NetworkManager" name="NetworkManager">
+<area shape="rect" id="Node000001" title="Singleton для сетевого взаимодействия с сервером." alt="" coords="5,81,126,108"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="142,87,152,95,144,102,126,104,126,99,142,97,147,95,140,92"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,5,100,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,45,68,82,63,80,64,49"/>
+</map>
